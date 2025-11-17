@@ -197,7 +197,7 @@ const Pages = {
     // Services Page
     services: () => {
         return `
-            <section class="hero" style="min-height: 60vh; padding-top: 8rem;">
+            <section class="hero alt-hero">
                 <div class="hero-animated-bg">
                     <div class="circle"></div>
                     <div class="circle"></div>
@@ -222,7 +222,7 @@ const Pages = {
                 </div>
             </section>
             
-            <section class="section">
+            <section class="section alt-bg">
                 <div class="container">
                     <div class="services-grid">
                         ${SERVICES.map(service => `
@@ -268,7 +268,7 @@ const Pages = {
     // About Page
     about: () => {
         return `
-            <section class="hero" style="min-height: 60vh; padding-top: 8rem;">
+            <section class="hero alt-hero">
                 <div class="hero-animated-bg">
                     <div class="circle"></div>
                     <div class="circle"></div>
@@ -292,7 +292,7 @@ const Pages = {
                 </div>
             </section>
             
-            <section class="section">
+            <section class="section alt-bg">
                 <div class="container">
                     <div class="section-header">
                         <h2 class="section-title">
@@ -340,7 +340,7 @@ const Pages = {
     // Team Page
     team: () => {
         return `
-            <section class="hero" style="min-height: 60vh; padding-top: 8rem;">
+            <section class="hero alt-hero">
                 <div class="hero-animated-bg">
                     <div class="circle"></div>
                     <div class="circle"></div>
@@ -365,7 +365,7 @@ const Pages = {
                 </div>
             </section>
             
-            <section class="section">
+            <section class="section alt-bg">
                 <div class="container">
                     <div class="section-header">
                         <h2 class="section-title">
@@ -403,7 +403,7 @@ const Pages = {
     // Contact Page
     contact: () => {
         return `
-            <section class="hero" style="min-height: 60vh; padding-top: 8rem;">
+            <section class="hero alt-hero">
                 <div class="hero-animated-bg">
                     <div class="circle"></div>
                     <div class="circle"></div>
@@ -436,7 +436,7 @@ const Pages = {
                 </div>
             </section>
             
-            <section class="section">
+            <section class="section alt-bg">
                 <div class="container">
                     <div class="section-header">
                         <h2 class="section-title">
@@ -497,7 +497,7 @@ const Pages = {
                                 <h4 style="margin-bottom: 0.5rem;">Email Us</h4>
                                 <a href="mailto:${CONTACT_INFO.email}" style="color: var(--color-primary);">${CONTACT_INFO.email}</a>
                             </div>
-                            
+thw                            
                             <div class="glass-effect" style="padding: 2rem; border-radius: 1.5rem; text-align: center;">
                                 <div style="font-size: 2rem; margin-bottom: 1rem;">📞</div>
                                 <h4 style="margin-bottom: 0.5rem;">Call Us</h4>
