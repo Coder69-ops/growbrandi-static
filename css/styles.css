@@ -460,6 +460,111 @@ img.loaded {
     background-clip: text;
 }
 
+/* ===== Validation Styles ===== */
+.validation-error {
+    border-color: var(--color-error) !important;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1) !important;
+}
+
+.validation-error-message {
+    color: var(--color-error);
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.validation-error-message::before {
+    content: '⚠️';
+}
+
+/* Honeypot field - hide from users */
+.honeypot {
+    position: absolute !important;
+    left: -9999px !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+/* ===== Security Styles ===== */
+.security-warning {
+    animation: slideInRight 0.3s ease-out;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* ===== PWA Styles ===== */
+.pwa-install-prompt {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: var(--bg-glass-strong);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    z-index: 9999;
+    box-shadow: var(--shadow-xl);
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.pwa-install-prompt.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.pwa-install-prompt .pwa-icon {
+    font-size: 2rem;
+}
+
+.pwa-install-prompt .pwa-content {
+    flex: 1;
+}
+
+.pwa-install-prompt .pwa-title {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.pwa-install-prompt .pwa-description {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.pwa-install-prompt .pwa-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .pwa-install-prompt {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .pwa-install-prompt .pwa-actions {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
 .glass-effect {
     background: var(--bg-glass);
     backdrop-filter: blur(16px) saturate(180%);

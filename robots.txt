@@ -1,0 +1,30 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://growbrandi.com/sitemap.xml
+
+# Block access to config files
+Disallow: /js/config.js
+Disallow: /.htaccess
+Disallow: /manifest.json
+
+# Block access to temporary files
+Disallow: /*.tmp
+Disallow: /*.log
+
+# Crawl delay (optional)
+Crawl-delay: 1
+
+# Specific bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
